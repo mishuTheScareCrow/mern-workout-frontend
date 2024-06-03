@@ -43,6 +43,7 @@ export default function WorkoutForm() {
       <input type="number" onChange={(e) => setReputation(e.target.value)} value={reputation} />
 
       <button>Add Workout</button>
+      {error && <div className="error">{error}</div>}
     </form>
   );
 }
